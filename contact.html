@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
 </head>
+
 <body>
-        
+
     <header>
-        <img src="jarditou-css/src/img/jarditou_logo.jpg" title="logo jarditou" alt="logo jarditou"> 
+        <img src="jarditou-css/src/img/jarditou_logo.jpg" title="logo jarditou" alt="logo jarditou">
         <p>La qualité depuis 70ans </p>
-    
+
         <nav>
             <ul>
                 <li> <a href="index.html" title="accueil">Accueil</a> </li>
@@ -24,38 +26,40 @@
         <H1>Contact</H1>
     </header>
 
-        <p>* ces champs sont obligatoires</p>
-        <form action="http://bienvu.net/script.php" method="post" id="formulaire_contact">
+    <p>* ces champs sont obligatoires</p>
+    <form action="http://bienvu.net/script.php" method="post" id="formulaire_contact">
         <fieldset>
             <legend>Vos coordonnées</legend>
             <label for="nom">Votre nom*:</label><input type="text" name="nom" id="nom" required><br>
             <label for="prenom">Votre prénom*:</label><input type="text" name="prenom" id="prenom" required><br>
-            Votre sexe*: 
-                <input type="radio" name="sexe" value="Féminin" required> Féminin
-                <input type="radio" name="sexe" value="Masculin" required> Masculin<br>
+            Votre sexe*:
+            <input type="radio" name="sexe" value="Féminin" required> Féminin
+            <input type="radio" name="sexe" value="Masculin" required> Masculin<br>
             <label for="date">Date de naissance*:</label> <input type="date" name="ddn" id="date" required><br>
-            <label for="code_postal">Code postal*:</label> <input type="text" name="code_postal" id="code_postal" required><br>
+            <label for="code_postal">Code postal*:</label> <input type="text" name="code_postal" id="code_postal"
+                required><br>
             <label for="adresse">Adresse:</label> <input type="text" name="adresse" id="adresse"><br>
-            <label for="ville">Ville:</label> <input type="text" name="ville" id="ville" ><br>
+            <label for="ville">Ville:</label> <input type="text" name="ville" id="ville"><br>
             <label for="email">Email*</label> <input type="email" name="email" id="email" required><br>
         </fieldset>
         <br>
         <fieldset>
-            <label for="sujet">Sujet*</label>   
-                <select id="sujet" required> 
-                    <option value="">Veuillez séléctionner un sujet</option>
-                    <option value="commandes">Mes commandes</option> 
-                    <option value="question">question sur un produit</option> 
-                    <option value="réclamation">Réclamation</option>
-                    <option value="autre">Autres</option>
-                </select><br>
+            <label for="sujet">Sujet*</label>
+            <select id="sujet" required>
+                <option value="">Veuillez séléctionner un sujet</option>
+                <option value="commandes">Mes commandes</option>
+                <option value="question">question sur un produit</option>
+                <option value="réclamation">Réclamation</option>
+                <option value="autre">Autres</option>
+            </select><br>
             <label for="question">Votre question*</label> <textarea name="question" id="question"></textarea>
         </fieldset>
         <br>
-        <label for="consent"></label> <input type="checkbox" name="consent" value="consent" id="consent"> *J'accepte le traitement informatique de ce formulaire <br>
+        <label for="consent"></label> <input type="checkbox" name="consent" value="consent" id="consent"> *J'accepte le
+        traitement informatique de ce formulaire <br>
         <button type="submit">Envoyer</button>
         <button type="button">Annuler</button>
-        </form>
+    </form>
     <footer>
         <nav>
             <ul>
@@ -67,4 +71,5 @@
     </footer>
 
 </body>
+
 </html>
