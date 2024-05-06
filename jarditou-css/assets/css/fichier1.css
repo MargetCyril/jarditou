@@ -1,0 +1,31 @@
+
+p {
+    width: 70vw;
+    
+}
+
+header p{
+    float: right;
+    font-size: 25pt;
+}
+
+aside {
+    width:30vw;
+    height:49vh;
+    float: right;
+    background-color: gray;
+}
+
+nav{
+    padding: 1em;
+    background-color: black;
+}
+nav ul li {
+    display: inline;
+    float:space-between;
+}
+
+nav ul li a {
+    color: white;
+
+}    
