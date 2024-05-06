@@ -1,4 +1,8 @@
 
+html {
+    font-size:100%
+}
+
 p {
     width: 70vw;
     
@@ -17,9 +21,10 @@ aside {
 }
 
 nav{
-    padding: 1em;
+    padding: 1rem;
     background-color: black;
 }
+
 nav ul li {
     display: inline;
     float:space-between;
@@ -27,5 +32,15 @@ nav ul li {
 
 nav ul li a {
     color: white;
+}
 
-}    
+img{
+    max-width: 100%;
+    height:auto
+}
+
+table, td, th{
+    border:1px solid black;
+    min-width: 6rem;
+    text-align:center;
+}
