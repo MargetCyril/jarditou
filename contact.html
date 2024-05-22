@@ -29,20 +29,28 @@
 <H1>Contact</H1>
 
     <p>* ces champs sont obligatoires</p>
-    <form action="http://bienvu.net/script.php" method="post" id="formulaire_contact">
+    <form action="http://bienvu.net/script.php" method="post" onsubmit="checkform()" id="formulaire_contact">
         <fieldset>
             <legend>Vos coordonnées</legend>
             <label for="nom">Votre nom*:</label><input type="text" name="nom" id="nom" required><br>
+            <p id="erreur_nom"></p>
             <label for="prenom">Votre prénom*:</label><input type="text" name="prenom" id="prenom" required><br>
+            <p id="erreur_prenom"></p>
             Votre sexe*:
             <input type="radio" name="sexe" value="Féminin" required> Féminin
             <input type="radio" name="sexe" value="Masculin" required> Masculin<br>
+            <p id="erreur_sexe"></p>
             <label for="date">Date de naissance*:</label> <input type="date" name="ddn" id="date" required><br>
+            <p id="erreur_date"></p>
             <label for="code_postal">Code postal*:</label> <input type="text" name="code_postal" id="code_postal"
                 required><br>
+            <p id="erreur_code"></p>
             <label for="adresse">Adresse:</label> <input type="text" name="adresse" id="adresse"><br>
+            <p id="erreur_adresse"></p>
             <label for="ville">Ville:</label> <input type="text" name="ville" id="ville"><br>
+            <p id="erreur_ville"></p>
             <label for="email">Email*</label> <input type="email" name="email" id="email" required><br>
+            <p id="erreur_mail"></p>
         </fieldset>
         <br>
         <fieldset>
@@ -72,6 +80,7 @@
             </ul>
         </nav>
     </footer>
+
 
 </body>
 
