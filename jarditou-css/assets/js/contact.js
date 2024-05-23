@@ -20,8 +20,22 @@ function checkform() {
     ville = filtre1.test(ville);
     let mail = document.getElementById("email").value;
     mail = filtre3.test(mail);
+    let sujet = document.getElementById(sujet).value;
     console.log(mail)
-    if (nom && prenom && date && postal && adresse && ville && mail) {
+    if (sujet == "") {
+        document.getElementById("sujet").innerHTML = "Sélectionnez un sujet"
+        sujet = false
+    }
+    else {
+        sujet = true
+    }
+        if (question == "") {
+        document.getElementById("question").innerHTML = "Sélectionnez un sujet"
+        question = false
+        }
+    else {question = true
+    }
+    if (nom && prenom && date && postal && adresse && ville && mail && sujet && question) {
         console.log("ok")
         return true
     }

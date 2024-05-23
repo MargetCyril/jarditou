@@ -26,31 +26,31 @@
 
     </header>
 
-<H1>Contact</H1>
-<!-- action="http://bienvu.net/script.php" -->
+    <H1>Contact</H1>
+
     <p>* ces champs sont obligatoires</p>
-    <form  method="post" onsubmit = "return checkform(this)" id="formulaire_contact">
+    <form method="post" action="http://bienvu.net/script.php" onsubmit="return checkform(this)" id="formulaire_contact">
         <fieldset>
             <legend>Vos coordonnées</legend>
             <label for="nom">Votre nom*:</label><input type="text" name="nom" id="nom" required><br>
-            <p id="erreur_nom"></p>
+            <p id="erreur_nom" class="red"></p>
             <label for="prenom">Votre prénom*:</label><input type="text" name="prenom" id="prenom" required><br>
-            <p id="erreur_prenom"></p>
+            <p id="erreur_prenom" class="red"></p>
             Votre sexe*:
             <input type="radio" name="sexe" value="Féminin" required> Féminin
             <input type="radio" name="sexe" value="Masculin" required> Masculin<br>
-            <p id="erreur_sexe"></p>
+            <p id="erreur_sexe" class="red"></p>
             <label for="date">Date de naissance*:</label> <input type="date" name="ddn" id="date" required><br>
-            <p id="erreur_date"></p>
+            <p id="erreur_date" class="red"></p>
             <label for="code_postal">Code postal*:</label> <input type="text" name="code_postal" id="code_postal"
                 required><br>
-            <p id="erreur_code"></p>
+            <p id="erreur_code" class="red"></p>
             <label for="adresse">Adresse:</label> <input type="text" name="adresse" id="adresse"><br>
-            <p id="erreur_adresse"></p>
+            <p id="erreur_adresse" class="red"></p>
             <label for="ville">Ville:</label> <input type="text" name="ville" id="ville"><br>
-            <p id="erreur_ville"></p>
+            <p id="erreur_ville" class="red"></p>
             <label for="email">Email*</label> <input type="email" name="email" id="email" required><br>
-            <p id="erreur_mail"></p>
+            <p id="erreur_mail" class="red"></p>
         </fieldset>
         <br>
         <fieldset>
@@ -62,7 +62,9 @@
                 <option value="réclamation">Réclamation</option>
                 <option value="autre">Autres</option>
             </select><br>
-            <label for="question">Votre question*</label> <textarea name="question" id="question"></textarea>
+            <p id="sujet"></p>
+            <label for="question">Votre question*</label> <textarea name="question" id="question" value=""></textarea>
+            <p id="question"></p>
         </fieldset>
         <br>
         <label for="consent"></label> <input type="checkbox" name="consent" value="consent" id="consent"> *J'accepte le
@@ -81,7 +83,7 @@
         </nav>
     </footer>
 
-<script src="jarditou-css/assets/js/contact.js"></script>
+    <script src="jarditou-css/assets/js/contact.js"></script>
 </body>
 
 </html>
