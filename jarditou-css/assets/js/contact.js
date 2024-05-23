@@ -5,7 +5,7 @@ function checkform() {
     let filtre4 = new RegExp(/^[0-9]+\/[0-9]+\/[0-9]+$/)
     let filtre5 = new RegExp(/^[a-zA-Z0-9]+$/)
     let nom = document.getElementById("nom").value;
-    soc = filtre1.test(nom);
+    nom = filtre1.test(nom);
     let prenom = document.getElementById("prenom").value;
     prenom = filtre1.test(prenom);
     /*     let sexe = document.getElementById("****").value; 
@@ -15,7 +15,7 @@ function checkform() {
     let postal = document.getElementById("code_postal").value;
     postal = filtre2.test(postal);
     let adresse = document.getElementById("adresse").value;
-    adresse = filtre5.text(adresse)
+    adresse = filtre5.test(adresse);
     let ville = document.getElementById("ville").value;
     ville = filtre1.test(ville);
     let mail = document.getElementById("email").value;
@@ -27,23 +27,30 @@ function checkform() {
     }
     if (nom == false) {
         document.getElementById("erreur_nom").innerHTML = "champ incorrect"
+        return false            
     }
     if (prenom == false) {
         document.getElementById("erreur_prenom").innerHTML = "champ incorrect"        
+        return false
     }
     if (date == false) {
         document.getElementById("erreur_date").innerHTML = "champ incorrect"
+        return false
     }
     if (postal == false) {
         document.getElementById("erreur_postal").innerHTML = "champ incorrect"
+        return false
     }
     if (adresse == false) {
         document.getElementById("erreur_adresse").innerHTML = "champ incorrect"
+        return false
     }
     if (ville == false) {
         document.getElementById("erreur_ville").innerHTML = "champs incorrect"
+        return false
     }
     if (mail == false) {
         document.getElementById("erreur_mail").innerHTML = "champ incorrect"
+        return false
     }
 }

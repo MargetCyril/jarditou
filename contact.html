@@ -27,9 +27,9 @@
     </header>
 
 <H1>Contact</H1>
-
+<!-- action="http://bienvu.net/script.php" -->
     <p>* ces champs sont obligatoires</p>
-    <form action="http://bienvu.net/script.php" method="post" onsubmit="checkform()" id="formulaire_contact">
+    <form  method="post" onsubmit = "return checkform(this)" id="formulaire_contact">
         <fieldset>
             <legend>Vos coordonnées</legend>
             <label for="nom">Votre nom*:</label><input type="text" name="nom" id="nom" required><br>
@@ -68,7 +68,7 @@
         <label for="consent"></label> <input type="checkbox" name="consent" value="consent" id="consent"> *J'accepte le
         traitement informatique de ce formulaire <br>
         <button type="submit">Envoyer</button>
-        <button type="button">Annuler</button>
+        <button type="reset">Annuler</button>
     </form>
     <br>
     <footer>
@@ -81,7 +81,7 @@
         </nav>
     </footer>
 
-
+<script src="jarditou-css/assets/js/contact.js"></script>
 </body>
 
 </html>
