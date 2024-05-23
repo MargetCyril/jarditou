@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button type button onClick="age()">Age</button>
+    <script>
+        function age() {
+            let a = 0
+            let b = 0
+            let c = 0
+            let d = 0
+            while (a < 100) {
+                a = prompt("Donnez l'age de la personne")
+                if (a < 20) {
+                    b++;
+                }
+                else if (a > 40) {
+                    c++
+                    if (c > 100) {
+                        break
+                    }
+                }
+                else {
+                    d++
+                }
+            }
+            alert("il y a " + b + " personne(s) de moins de 20ans, " + d + " personne(s) entre 20 et 40 ans et " + c + " personne de plus de 40 ans.")
+        }
+    </script>
+
+    <button type="button" onclick="table()">Table de multiplication</button>
+    <script>
+        function table() {
+            let x = prompt("Quelle table de multiplication voulez-vous?")
+            for (i = 0; i <= 10; i++) {
+                a = x * i
+                console.log(i + "x" + x + " = " + a)
+            }
+        }
+    </script>
+
+    <button type="button" onclick="recherche()">Recherche d'un prénom</button>
+    <script>
+        function recherche() {
+            let tab = ["Audrey", "Aurélien", "Flavien", "Jérémy", "Laurent", "Melik", "Nouara", "Salem", "Samuel", "Stéphane"];
+            let a =prompt("quel prénom voulez-vous?")
+            a = tab.indexOf(a)
+            if (a != -1) {
+            tab.push("");
+            tab.splice(a, 1)
+            }
+            else {
+                alert("Je n'ai pas ce nom là")
+            }
+        }
+    </script>
+
+    <button type="button" onclick="total()">total d'une commande </button>
+    <script>
+        function total() {
+            let pu
+            let qtecom
+            let pap
+            let rem
+            let rem1
+            let port
+            let port1
+            let tot
+            pu = prompt("combien coute l'article unitaire?")
+            qtecom = prompt ("combien en voulez-vous?")
+            tot = pu * qtecom
+            if (tot > 100 && tot <= 200) {
+                rem = 0.05
+                rem1 = "5%"
+            }
+            else if (tot > 200) {
+                rem = 0.1
+                rem1 = "10%"
+            }
+            else if (tot <=100) {
+                rem = 0
+                rem1 = "0%"
+            }
+            pap = tot - (tot*rem)
+            if (pap >500) {
+                port = 0
+                port1 = "0€"
+            }  
+            else {
+                port = 0.02
+                    if (port < 6)
+                    port = 6
+                    port1 = "6€"
+            }
+            pap = pap + port
+            alert("remise de "+rem1+" et frais de port "+port1+" soit un total de "+pap)
+
+        }
+    </script>
+</body>
+
+</html>
