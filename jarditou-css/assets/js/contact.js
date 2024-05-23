@@ -31,10 +31,11 @@ function checkform() {
         sujet = true
     }
         if (question == "") {
-        document.getElementById("question").innerHTML = "Sélectionnez un sujet"
+        document.getElementById("question").innerHTML = "Posez votre quetion"
         question = false
         }
-    else {question = true
+    else {
+        question = filtre5.test(question)
     }
     if (nom && prenom && date && postal && adresse && ville && mail && sujet && question) {
         console.log("ok")
